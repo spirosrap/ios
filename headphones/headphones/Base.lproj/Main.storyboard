@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="headphones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-1t-YM8">
+                                <rect key="frame" x="277" y="494" width="46" height="30"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkHeadphones:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lS5-2L-uR8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFk-oB-Qua">
+                                <rect key="frame" x="275" y="263" width="50" height="73"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K7J-1t-YM8" firstAttribute="top" secondItem="TFk-oB-Qua" secondAttribute="bottom" constant="161" id="1D8-OY-ciB"/>
+                            <constraint firstAttribute="centerX" secondItem="TFk-oB-Qua" secondAttribute="centerX" id="4C0-a6-xsv"/>
+                            <constraint firstItem="K7J-1t-YM8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="261" id="7s4-IU-VZc"/>
+                            <constraint firstItem="K7J-1t-YM8" firstAttribute="top" secondItem="TFk-oB-Qua" secondAttribute="bottom" constant="158" id="Gdf-n5-rlI"/>
+                            <constraint firstAttribute="centerX" secondItem="K7J-1t-YM8" secondAttribute="centerX" id="Ie2-Oo-Htr"/>
+                            <constraint firstAttribute="centerX" secondItem="K7J-1t-YM8" secondAttribute="centerX" id="JGd-lf-3ts"/>
+                            <constraint firstAttribute="centerX" secondItem="TFk-oB-Qua" secondAttribute="centerX" id="dZw-ZR-r3O"/>
+                            <constraint firstAttribute="centerY" secondItem="TFk-oB-Qua" secondAttribute="centerY" id="drN-e6-TnR"/>
+                            <constraint firstAttribute="centerY" secondItem="TFk-oB-Qua" secondAttribute="centerY" id="eqL-dm-DCi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K7J-1t-YM8" secondAttribute="trailing" constant="261" id="pnt-bT-Zfa"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="K7J-1t-YM8" secondAttribute="bottom" constant="73" id="v7g-nQ-jIS"/>
+                            <constraint firstAttribute="centerY" secondItem="TFk-oB-Qua" secondAttribute="centerY" id="xnM-SP-aVI"/>
+                            <constraint firstAttribute="centerY" secondItem="K7J-1t-YM8" secondAttribute="centerY" constant="-212" id="zYa-Mp-Bf2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dZw-ZR-r3O"/>
+                                <exclude reference="drN-e6-TnR"/>
+                                <exclude reference="xnM-SP-aVI"/>
+                                <exclude reference="1D8-OY-ciB"/>
+                                <exclude reference="7s4-IU-VZc"/>
+                                <exclude reference="JGd-lf-3ts"/>
+                                <exclude reference="pnt-bT-Zfa"/>
+                                <exclude reference="zYa-Mp-Bf2"/>
+                                <exclude reference="v7g-nQ-jIS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="notification" destination="TFk-oB-Qua" id="wp3-z1-HOV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
